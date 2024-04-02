@@ -4,12 +4,11 @@ import tarefaRoute from "./routes/tarefaRoute.js";
 import authRoute from "./routes/authRoute.js";
 
 const server = express();
-const PORT = process.env.PORT || 3001;
 
 server.use(cors());
 server.use(express.json());
 server.use(tarefaRoute, authRoute);
 
-server.listen(PORT, () => {
+server.listen(3001, () => {
   console.log("API Started!");
 });
