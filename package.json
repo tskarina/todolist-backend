@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "engines": {
-  "node": "20.x"
-  },
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch --no-warnings src/server.js",
